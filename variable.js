@@ -60,7 +60,7 @@ let aa = counter++; //aa = counter ->
 console.log(aa);
 
 let bb = ++counter;
-console.log(b);
+console.log(bb);
 
 //string
 const long_text = "welkfjdsklefja\
@@ -123,5 +123,5 @@ console.log(text2.trim());
 const list1 = [1,2];
 const hd = list1 ;
 
-const hd[1] = 0;
-console.log(hd);
+// const hd[1] = 0;
+// console.log(hd);
