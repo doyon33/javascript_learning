@@ -39,3 +39,38 @@ class Article {
 const article1 = new Article()
 console.log(article1.publisher);
 console.log(Article.publisher);
+
+class Shape {
+  constructor (width, height, color) {
+    this.width = width
+    this.height = height
+    this.color = color
+  }
+
+  draw () {
+    console.log(`drawing ${this.color} color`)
+  }
+  getArea () {
+    return this.width * this.height;
+  }
+}
+class Rectangle extends Shape {} //상속
+class Triangle  extends Shape { //상속
+  getArea () {
+    return this.width * this.height / 2; //오버라이딩(덮어쓰기)
+  }
+  draw () {
+    super.draw() //덮어 썼음에도 이렇게 하면 원래 메소드도 실행한다.
+    console.log(this.color)
+  }
+}
+
+const rectangle = new Rectangle(20, 20, 'red')
+rectangle.draw()
+console.log(rectangle.getArea())
+
+const triangle = new Triangle(20, 20, 'blue')
+triangle.draw()
+console.log(triangle.getArea())
+
+Object
