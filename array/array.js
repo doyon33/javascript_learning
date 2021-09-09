@@ -52,4 +52,5 @@ console.log(arr2.includes(100)); //false, value가 배열에 있는지 여부를
 
 const arr3 = arr2.concat([6, 7])
 console.log(arr3)
+
 console.log(arr2.every(element => element >= 1))
