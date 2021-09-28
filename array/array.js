@@ -26,6 +26,7 @@ arr2.forEach(function(element) {
 // }
 
 // console.clear()
+console.log('------push-----')
 arr2.push(4) // list.append(value) in python
 console.log(arr2)
 arr2.pop()
@@ -47,6 +48,8 @@ console.log(arr2); //[1, 11, 12, 13, 3, 4, 5]
 //searching
 console.log(arr2.indexOf(1)); //
 console.log(arr2.indexOf(100)); // 없을 때는 -1이 나온다.
+//** */
+
 // console.log(arr2.lastIndexOf(1)) //뒤에서부터 셀 때
 console.log(arr2.includes(100)); //false, value가 배열에 있는지 여부를 알려줌.
 
@@ -54,3 +57,21 @@ const arr3 = arr2.concat([6, 7])
 console.log(arr3)
 
 console.log(arr2.every(element => element >= 1))
+
+//~ 의 뜻은 -(n+1)
+//! = not이라는 의미.
+// !~12 = false, !!~12 = ture
+//* 이거 다시 생각해보기 ..............
+var arr = [1, 2, 3]
+if (!~arr2.indexOf('5'))
+
+let condition 
+
+if (arr.indexOf == -1) {
+  condition = true
+} else {
+  condition = false
+}
+if (condition) {
+
+}
